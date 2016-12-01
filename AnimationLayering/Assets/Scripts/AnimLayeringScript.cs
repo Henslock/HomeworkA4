@@ -19,6 +19,13 @@ public class AnimLayeringScript : MonoBehaviour {
     private float weight = 0.0f;
 
 	void Update () {
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            anim.SetLayerWeight(1, weight);
+            anim.Play("attack_01", 1);
+        }
+
         x = (Input.GetAxis("Horizontal"));
         y = (Input.GetAxis("Vertical"));
 
@@ -39,12 +46,7 @@ public class AnimLayeringScript : MonoBehaviour {
                 weight = 1.0f;
         }
 
+        anim.SetLayerWeight(1, weight);
         textW.text = ("Animaton Weight : " + weight.ToString("F2"));
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            anim.SetLayerWeight(1, weight);
-            anim.Play("attack_01", 1);
-        }
     }
 }
