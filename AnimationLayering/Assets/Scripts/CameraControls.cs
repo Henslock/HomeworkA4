@@ -3,7 +3,13 @@ using System.Collections;
 
 public class CameraControls : MonoBehaviour {
 
-	void Update ()
+    /*
+    Animation Layering Assignment - Simple horizontal camera controls.
+
+    Josh Bellyk - 100526009
+    Owen Meier  - 100538643    
+    */
+    void Update ()
     {
         float angH = Input.GetAxis("AnalogHorizontal") * 3;
 

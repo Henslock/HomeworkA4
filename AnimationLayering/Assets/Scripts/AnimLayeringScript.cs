@@ -4,6 +4,15 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class AnimLayeringScript : MonoBehaviour {
+
+    /*
+    Animation Layering Assignment - Takes controller axis input and maps that to parameters that affect the character's animation in Unity's Animator interface.
+    You can use X to swing (our additive animation) and R1/L1 to increase the weight of the animation.
+
+    Josh Bellyk - 100526009
+    Owen Meier  - 100538643    
+    */
+
     public Animator anim;
     public Text textW;
     private float x, y = 0.0f;
