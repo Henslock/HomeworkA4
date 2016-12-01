@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Footman/Scenes/AnimLayering.unity
+  isLoaded: 1
+  isActive: 1
